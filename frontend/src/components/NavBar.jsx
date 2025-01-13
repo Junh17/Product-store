@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Flex, HStack, Text, Button, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { Container, Flex, HStack, Text, Button, useColorMode } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { CiSquarePlus } from "react-icons/ci";
 import { IoMoon } from "react-icons/io5";
@@ -8,7 +8,7 @@ import { LuSun } from "react-icons/lu";
 
 const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
-  return (
+    return (
     <Container maxW={"1140px"} >
         <Flex
           h={16}
@@ -42,7 +42,7 @@ const Navbar = () => {
             </HStack>      
         </Flex>
     </Container>
-  );
+    );
 };
 
 export default Navbar;
